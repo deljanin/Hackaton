@@ -40,6 +40,7 @@ include './components/navbar.component.php';
         margin-top: 20px;
         padding:20px;
         text-align: justify;
+        margin-left:1%;
     }
 
 	</style>

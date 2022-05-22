@@ -18,7 +18,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 // TODO Needs formating
 if ($data->num_rows > 0) {
-    echo '<h1 class="recipe__title">' . $recipe_name . '</h1>' . "<br>";
+    echo "<div style='text-align: center'>";
+    echo '<div style="width: 100%; text-align: center;"> <h1 class="recipe__title">' . $recipe_name . '</div> </h1>' . "<br>";
+    echo "</div>";
+    echo "<div class='recipe__container'>";
+
     echo '<img src="' . $recipe_imgURL . '" class="recipe__img" alt="Image" >';
 
     $column = "";
@@ -34,5 +38,6 @@ if ($data->num_rows > 0) {
     echo '<div class="recipe__text">' . $recipe . '</div>';
     //$main_div = '<img src="' . $recipe_imgURL . '" class="recipe__img" alt="Image" >' . '<div class="recipe__ingredients">' . $column . '</div>';
     //echo '<div class="recipe__main_div">' . $main_div . '</div>';
+    echo '</div>';
 }
 ?>
