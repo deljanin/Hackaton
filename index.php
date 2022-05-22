@@ -1,3 +1,5 @@
+<img class="bg_image" src="assets/bg_image.jpg" alt="background image" />
+
 <?php
 include './header.php';
 include './conn.php';
@@ -6,7 +8,7 @@ include './components/navbar.component.php';
 $data = $conn->query('SELECT * FROM recipes;');
 ?>
 
-<img class="bg_image" src="assets/bg_image.jpg" alt="background image" />
+<html><body>
 <h1 class="mt-5 mb-0 index__mainText">Recipes:</h1>
 <div class="m-5 index__cardContainer">
     <?php
